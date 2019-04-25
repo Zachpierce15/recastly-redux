@@ -2,6 +2,7 @@ import React from 'react';
 import VideoList from './VideoList.js';
 import VideoPlayer from './VideoPlayer.js';
 import Search from './Search.js';
+import exampleVideoData from '../data/exampleVideoData';
 
 class App extends React.Component {
   constructor(props) {
@@ -49,12 +50,12 @@ class App extends React.Component {
         </nav>
         <div className="row">
           <div className="col-md-7">
-            <VideoPlayer video={this.state.currentVideo}/>
+            <VideoPlayer video={exampleVideoData[0]}/>
           </div>
           <div className="col-md-5">
             <VideoList
               handleVideoListEntryTitleClick={this.handleVideoListEntryTitleClick.bind(this)}
-              videos={this.state.videos}
+              videos={exampleVideoData}
             />
           </div>
         </div>

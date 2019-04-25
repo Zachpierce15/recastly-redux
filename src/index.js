@@ -7,8 +7,8 @@ import Provider from "react-redux";
 import store from './store/store.js';
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App API_KEY={YOUTUBE_API_KEY} searchYouTube={searchYouTube} />
-  </Provider>,
+  // <Provider store={store}>
+    <App API_KEY={YOUTUBE_API_KEY} searchYouTube={searchYouTube} />,
+  // </Provider>,
   document.getElementById('app')
 );
