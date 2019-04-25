@@ -4,7 +4,7 @@ import App from './components/App.js';
 import searchYouTube from './lib/searchYouTube.js';
 import YOUTUBE_API_KEY from './config/youtube.js';
 import Provider from "react-redux";
-//  import store
+import store from './store/store.js';
 
 ReactDOM.render(
   <Provider store={store}>
